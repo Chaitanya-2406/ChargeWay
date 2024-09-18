@@ -125,7 +125,7 @@ const MapContainer = () => {
   };
 
   return (
-    <LoadScript googleMapsApiKey="AIzaSyDMeIxByl8noZVfqNWTtI5xN-1mG4PLHDw" libraries={['places']}>
+    <LoadScript googleMapsApiKey={process.env.REACT_APP_GOOGLE_MAPS_API_KEY} libraries={['places']}>
       <div className="map-container">
         <GoogleMap
           mapContainerStyle={containerStyle}
